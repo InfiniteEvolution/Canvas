@@ -1,150 +1,142 @@
-# Canvas
-## On-Device Adaptive AI Framework
+# Canvas | On-Device Adaptive AI: A Universal Data Training and Model Management Framework
 
-### Vision
-
-A universal, privacy-first AI framework enabling any individual or device to train, evolve, and deploy custom machine learning models using on-device sensor data—without human supervision or cloud dependency. Each user builds unique intelligence models optimized for their own behavior and environment.
-
-### Core Principles
-
-1. **Ultra Privacy**: All data stays on-device. No external transfer unless explicitly authorized and encrypted.
-2. **Universal Adaptability**: Runs across OS platforms (iOS, Android, macOS, Windows, Linux, etc.) with optimized model formats per platform.
-3. **Self-Governed Training**: Automated data gathering, preprocessing, model training, and evaluation based on thresholds of new data.
-4. **Edge Intelligence Evolution**: Models continuously evolve with live and historical sensor data.
-5. **Shareable Intelligence**: Users can share models or data snapshots securely across devices or with peers.
-6. **Future Expandability**: Designed for integration with high-performance GPU servers or distributed AI nodes.
-
-### Key Components
-
-#### 1. **Data Pipeline Layer**
-
-* Collects multi-sensor input (GPS, accelerometer, gyroscope, BLE devices, etc.)
-* Handles both real-time streaming and historical datasets
-* Encrypted storage (custom in-house encryption system)
-* Versioned dataset storage for reproducibility
-
-#### 2. **Model Lifecycle Layer**
-
-* Automated model training using threshold-based triggers
-* On-device inference engine (TensorFlow Lite / Core ML / PyTorch Mobile abstraction)
-* Dynamic retraining with performance feedback loop
-* Model export in platform-optimized formats (.mlmodel, .tflite, .onnx, etc.)
-
-#### 3. **Compatibility & Migration System**
-
-* Model and data versioning engine
-* Migration assistant for cross-platform model transfer
-* Dependency graph manager (software + hardware compatibility)
-* Conversion tools between model types and OS targets
-
-#### 4. **Security & Privacy Layer**
-
-* Fully encrypted datasets and models using custom encryption
-* Access control for shared data or models
-* Local sandbox execution with zero external logging
-
-#### 5. **Interface Layer**
-
-* Command-line tool for developers and researchers
-* SDK/API for integration into apps or scripts
-* Optional GUI or companion app for visualization
-
-#### 6. **Networking & Sharing Layer**
-
-* Peer-to-peer model and dataset exchange
-* Secure cloud sync (optional, encrypted)
-* Distributed compute participation (e.g., use a friend’s GPU device)
+### Vision Statement
+A future where *every individual* can train and use AI models for their own needs — securely, privately, and efficiently, without relying on external servers.  
+**On-Device Adaptive AI** empowers users to collect, organize, train, and share their AI models directly from their own devices, across any operating system or hardware platform.
 
 ---
 
-### Technical Architecture Diagram
+## Core Concept
 
-```
-+----------------------------------------------------------+
-|                    On-Device Adaptive AI                 |
-+----------------------------------------------------------+
-|                                                          |
-|   +-------------------+       +----------------------+   |
-|   | Data Pipeline     |-----> | Model Lifecycle      |   |
-|   | (Sensors, Files)  |       | (Train, Infer, Eval) |   |
-|   +-------------------+       +----------------------+   |
-|              |                           |               |
-|              v                           v               |
-|   +-------------------+       +----------------------+   |
-|   | Security Layer    |<----->| Compatibility Layer  |   |
-|   | (Encrypt, Control)|       | (Version, Convert)   |   |
-|   +-------------------+       +----------------------+   |
-|              |                           |               |
-|              v                           v               |
-|   +-------------------+       +----------------------+   |
-|   | Interface Layer   |<----->| Networking Layer     |   |
-|   | (CLI, SDK, GUI)   |       | (Share, Sync, GPU)   |   |
-|   +-------------------+       +----------------------+   |
-|                                                          |
-+----------------------------------------------------------+
-```
+This open-source package provides a unified system for **personalized, on-device AI training and model management**.  
+It ensures **user privacy**, **data sovereignty**, and **cross-platform compatibility** through modular architecture and advanced encryption.
 
 ---
 
-### Module Interaction Flow
+## Key Features
 
-1. **Data Collection Phase**  → Sensors feed raw data to `DataPipeline`.
-2. **Preprocessing & Storage** → Data encrypted and versioned locally.
-3. **Training Trigger** → When threshold is met, `ModelLifecycle` trains/retrains automatically.
-4. **Evaluation & Optimization** → Model performance measured; best model exported.
-5. **Version Tracking** → `CompatibilitySystem` logs dependency and version details.
-6. **Notification** → User/system notified of new model availability and capabilities.
-7. **Model Sharing (Optional)** → `NetworkingLayer` manages secure peer exchange or GPU-assisted training.
+1. **Data Permission Control**  
+   - Fine-grained control over which data sources the model can access.  
+   - Transparent permission handling for privacy compliance.
 
----
+2. **Localized Strings**  
+   - Automatic support for multiple languages and regions.  
+   - Adaptable model training prompts and UI messages.
 
-### Future Vision
+3. **Optimized Data Lifecycle**  
+   - Collect → Organize → Train → Export models.  
+   - Intelligent caching and incremental training for efficiency.
 
-A decentralized ecosystem where individuals own their own AI evolution—each device a learning node, contributing to a new era of personalized, autonomous intelligence. Users will be able to:
+4. **Encryption of User Data**  
+   - All training data is encrypted locally using a custom, in-house encryption mechanism.  
+   - Encryption methods are **non-public and unique per installation**, ensuring true data privacy.
 
-* Run private AI workflows entirely offline.
-* Sync and merge models collaboratively with encryption.
-* Scale from mobile training to high-performance compute devices seamlessly.
+5. **Encrypted Model Output**  
+   - Model files are stored and distributed in encrypted form.  
+   - Only authorized environments can decrypt and execute the models.
 
----
+6. **Adaptive Multi-Device Training**  
+   - Training can automatically shift to the **least-used** device in a user’s network.  
+   - Users with multiple devices can share computing load intelligently.  
+   - Enables distributed model training across personal hardware while maintaining full privacy.
 
-### Development Plan (Initial Phase)
+7. **Cross-Platform Compatibility**  
+   - Designed to work on macOS, iOS, Linux, Windows, and Android.  
+   - Platform-specific model optimizations for maximum performance (e.g., `.coreml`, `.onnx`, `.tflite`, `.pt`, etc.).
 
-* **Language**: TypeScript (cross-platform CLI + core logic)
-* **Core Modules**: DataHandler, ModelManager, EncryptionService, VersionSystem
-* **Milestone 1**: Local training prototype using simulated sensor data
-* **Milestone 2**: Model export and migration between macOS and Linux
-* **Milestone 3**: Secure model sharing and version graph implementation
+8. **Future-Proof Organization**  
+   - Every dataset and model includes metadata about:  
+     - Software dependencies  
+     - Graph structure  
+     - Version compatibility  
+     - Conversion tools and migration paths  
+   - Encrypted dependency maps ensure portability and secure sharing.
 
----
+9. **Command Line, App, and Script Interfaces**  
+   - Usable as a CLI tool, desktop/mobile app, or automated script.  
+   - Simple APIs to integrate into existing workflows.
 
-### Potential Open Source Name Ideas
-
-* **NeuroLocal**
-* **HandifyAI** (aligned with user’s ecosystem naming)
-* **PrivAI**
-* **EvoNode**
-* **IndiTrain**
-
----
-
-### Licensing
-
-This project follows a **Commercial Paid License** model.
-
-* **Usage Rights**: Licensed users are granted rights to use, extend, and distribute compiled binaries or integrated modules for internal or commercial use.
-* **Prohibited Actions**: Redistribution of source code, reverse engineering, or unlicensed modification is strictly forbidden.
-* **License Tiers**:
-
-  * **Personal Developer License** – For individual use and experimentation.
-  * **Startup License** – For small teams under limited revenue threshold.
-  * **Enterprise License** – For large-scale deployment, redistribution, or SaaS integration.
-* **Support**: Licensed customers receive updates, documentation, and dedicated support channels.
+10. **Data Portability & Secure Sharing**  
+    - Organized datasets can be safely transferred to other devices or high-spec GPU machines.  
+    - Data remains encrypted and verifiable across any environment.
 
 ---
 
-### Summary
+## Technical Highlights
 
-This framework represents the foundation for a decentralized intelligence ecosystem—a world where AI becomes personal, autonomous, and fully under user control. It prioritizes privacy, flexibility, and long-term technical evolution across device generations and operating systems.
+- **In-house Encryption Engine:** Every user instance generates its own algorithmic variation, ensuring no universal key exists.  
+- **On-device Intelligence:** All processing happens locally. No server dependencies.  
+- **Modular Architecture:** Each layer (Data → Encryption → Model → Interface) operates independently for easy updates.  
+- **Optimized Model Extensions:** Automatically adapts the model format for the target OS and device (e.g., Core ML for iOS, TensorRT for NVIDIA systems).  
+
+---
+
+## Milestones
+
+### 🧩 **Milestone 1 — Foundation**
+**Goal:** Build the core data and encryption modules.
+- Implement local data permission system.  
+- Add in-house encryption library with per-user key generation.  
+- Establish data collection and storage standards.  
+- Provide CLI interface for basic data operations.
+
+---
+
+### ⚙️ **Milestone 2 — Training and Model Management**
+**Goal:** Enable end-to-end model lifecycle management.
+- Develop data pipeline (collect → train → export).  
+- Integrate modular model format support (`CoreML`, `ONNX`, `TensorFlow Lite`, etc.).  
+- Add encrypted model storage and version tracking.  
+- Introduce dependency graph and compatibility metadata.
+
+---
+
+### 🌐 **Milestone 3 — Cross-Platform & Adaptive Systems**
+**Goal:** Bring multi-device and OS-level intelligence.
+- Implement adaptive model training across user devices.  
+- Device resource monitor to detect least-active hardware.  
+- Cross-platform runtime adapters for macOS, Linux, Windows, and Android.  
+- Introduce model optimization system for per-device formats.
+
+---
+
+### 🔐 **Milestone 4 — Privacy, Sharing, and Scalability**
+**Goal:** Enhance data security and portability.
+- Build encrypted sharing mechanism between trusted devices.  
+- Implement remote training delegation to GPU servers or friends’ systems (with encryption).  
+- Add version migration assistant and dependency resolver.  
+- Finalize end-to-end encryption audit and verification system.
+
+---
+
+### 🧠 **Milestone 5 — Interface and Developer Ecosystem**
+**Goal:** Create user-friendly and developer-accessible layers.
+- Design GUI app for simplified control and training visualization.  
+- Publish SDK and APIs for integration in custom workflows.  
+- Add support for localized UI/UX and documentation.  
+- Build community-driven extension registry for model types and encryption patterns.
+
+---
+
+## License
+
+**License Type:** Paid Hybrid License  
+- Free for personal and academic research use.  
+- Paid for commercial deployment or integrated product distribution.  
+- All code contributions remain open-source under contributor agreements.  
+- Encryption libraries and model converters are proprietary under the paid license.
+
+---
+
+## Vision for the Future
+
+This framework represents a **new era of private AI** — where every user becomes the owner, trainer, and guardian of their own intelligent systems.  
+No centralized control. No data exposure. Just *pure intelligence*, powered by personal hardware.
+
+---
+
+**Created by:**  
+Sijo P T  
+*Lead iOS Engineer & Visionary Developer*
 
 This content was drafted with the help of AI Tools.
