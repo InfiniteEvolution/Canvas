@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30C0C0D52EC515B500C18A3B /* WHITEPAPER.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */; };
 		30C1E93B2EC50F8500E87A73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E93A2EC50F8500E87A73 /* README.md */; };
 		30C1E93C2EC50F8500E87A73 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E9392EC50F8500E87A73 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WHITEPAPER.md; sourceTree = "<group>"; };
 		30C1E8F52EC5013700E87A73 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C1E9392EC50F8500E87A73 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		30C1E93A2EC50F8500E87A73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		30C1E93D2EC511C900E87A73 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */,
 				30C1E9392EC50F8500E87A73 /* LICENSE */,
 				30C1E93A2EC50F8500E87A73 /* README.md */,
 			);
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C1E93B2EC50F8500E87A73 /* README.md in Resources */,
+				30C0C0D52EC515B500C18A3B /* WHITEPAPER.md in Resources */,
 				30C1E93C2EC50F8500E87A73 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
