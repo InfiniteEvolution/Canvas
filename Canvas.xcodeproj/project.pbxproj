@@ -43,7 +43,9 @@
 			children = (
 				30C1E8F72EC5013700E87A73 /* Canvas */,
 				30C1E8F62EC5013700E87A73 /* Products */,
-				30C1E93D2EC511C900E87A73 /* Documents */,
+				30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */,
+				30C1E9392EC50F8500E87A73 /* LICENSE */,
+				30C1E93A2EC50F8500E87A73 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,16 +55,6 @@
 				30C1E8F52EC5013700E87A73 /* Canvas.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		30C1E93D2EC511C900E87A73 /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */,
-				30C1E9392EC50F8500E87A73 /* LICENSE */,
-				30C1E93A2EC50F8500E87A73 /* README.md */,
-			);
-			path = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
