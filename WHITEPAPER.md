@@ -1302,7 +1302,7 @@ where:
 
 ```swift
 // Data Pipeline
-class SensorCollector: NSObject, ObservableObject
+class SensorCollector: NSObject
 class DataStore: @Observable
 
 // Model Lifecycle  
@@ -1319,7 +1319,6 @@ struct ModelMetadata: Codable
 
 **Observation Pattern**:
 - Modern `@Observable` macro for SwiftUI
-- `ObservableObject` for NSObject subclasses
 - Reactive updates for UI
 
 ### 11.2 Encryption Implementation

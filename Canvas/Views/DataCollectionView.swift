@@ -10,7 +10,7 @@ import Charts
 
 struct DataCollectionView: View {
     @State private var dataStore = DataStore.shared
-    @StateObject private var sensorCollector = SensorCollector.shared
+    @State private var sensorCollector = SensorCollector.shared
     
     @Environment(\.dismiss) var dismiss
     

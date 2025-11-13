@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @StateObject private var sensorCollector = SensorCollector.shared
+    @State private var sensorCollector = SensorCollector.shared
     @State private var dataStore = DataStore.shared
     @State private var modelTrainer = ModelTrainer.shared
     @State private var modelManager = ModelManager.shared

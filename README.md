@@ -138,7 +138,7 @@ Collects data from device sensors using CoreMotion and CoreLocation.
 - Automatic sensor availability detection
 - Configurable update intervals (default: 1 second)
 - Location permission handling
-- Real-time data publishing via `@Published` properties
+- Real-time data publishing via properties
 
 **Example:**
 ```swift
@@ -454,11 +454,11 @@ class DataStore {
 ### SensorCollector
 
 ```swift
-class SensorCollector: NSObject, ObservableObject {
+class SensorCollector: NSObject {
     static let shared: SensorCollector
     
-    @Published var isCollecting: Bool
-    @Published var lastReading: SensorData?
+    var isCollecting: Bool
+    var lastReading: SensorData?
     
     func startCollection()
     func stopCollection()
