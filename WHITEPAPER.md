@@ -2405,103 +2405,103 @@ The following section presents a formally articulated description of the **Evolv
 ```mermaid
 flowchart TD
 
-  subgraph Devices [User Device Ecosystem (Heterogeneous)]
+  subgraph Devices["User Device Ecosystem - Heterogeneous"]
 
-    A1[iPhone — Sensor Collector / Lightweight Trainer]
+    A1["iPhone — Sensor Collector / Lightweight Trainer"]
 
-    A2[iPad — Analytical Node]
+    A2["iPad — Analytical Node"]
 
-    A3[Mac — Primary Aggregator / High-Intensity Trainer]
+    A3["Mac — Primary Aggregator / High-Intensity Trainer"]
 
-    A4[Watch — Micro-Collector / Edge Consumer]
+    A4["Watch — Micro-Collector / Edge Consumer"]
 
-    A5[VisionPro — Contextual Synthesizer]
-
-  end
-
-
-
-  subgraph CanvasMesh [Canvas Encrypted Network Fabric]
-
-    CM[(mDNS / WireGuard / mTLS Channels)]
+    A5["VisionPro — Contextual Synthesizer"]
 
   end
 
 
 
-  subgraph EvolveCore [Evolve Core Layer / Canvas Runtime]
+  subgraph CanvasMesh["Canvas Encrypted Network Fabric"]
 
-    RUST[Rust Core: Deterministic Feature Synthesis, Key Wrapping, Differential Privacy]
-
-    CANVAS[Canvas Cipher & Hardware-Backed Attestation]
-
-    FED[Federated Orchestrator: Secure Aggregation & Validation]
+    CM["mDNS / WireGuard / mTLS Channels"]
 
   end
 
 
 
-  subgraph MLRuntimes [Machine Learning Runtime Abstraction Layer]
+  subgraph EvolveCore["Evolve Core Layer / Canvas Runtime"]
 
-    COREML[Core ML (Inference + MLUpdateTask Fine-Tuning)]
+    RUST["Rust Core: Deterministic Feature Synthesis, Key Wrapping, Differential Privacy"]
 
-    TFLITE[TensorFlow Lite (Model Personalization API)]
+    CANVAS["Canvas Cipher & Hardware-Backed Attestation"]
 
-    PYTORCH[PyTorch Mobile (On-Device Gradient Descent)]
-
-    MLC[MLC AI / Metal Compiler (Metal-Accelerated Training and Inference)]
+    FED["Federated Orchestrator: Secure Aggregation & Validation"]
 
   end
 
 
 
-  A1 -->|Sensor Data Bundles (CanvasFile Encapsulation)| RUST
+  subgraph MLRuntimes["Machine Learning Runtime Abstraction Layer"]
 
-  A2 -->|Feature Projections| RUST
+    COREML["Core ML - Inference + MLUpdateTask Fine-Tuning"]
 
-  A4 -->|Micro Telemetry Events| RUST
+    TFLITE["TensorFlow Lite - Model Personalization API"]
 
-  A5 -->|Contextual Embeddings| RUST
+    PYTORCH["PyTorch Mobile - On-Device Gradient Descent"]
+
+    MLC["MLC AI / Metal Compiler - Metal-Accelerated Training and Inference"]
+
+  end
 
 
 
-  RUST -->|Encrypted Artifacts| CANVAS
+  A1 -->|"Sensor Data Bundles - CanvasFile Encapsulation"| RUST
 
-  CANVAS -->|Encrypted Transport| CM
+  A2 -->|"Feature Projections"| RUST
+
+  A4 -->|"Micro Telemetry Events"| RUST
+
+  A5 -->|"Contextual Embeddings"| RUST
+
+
+
+  RUST -->|"Encrypted Artifacts"| CANVAS
+
+  CANVAS -->|"Encrypted Transport"| CM
 
   CM --> A3
 
 
 
-  A3 -->|Decryption & Attestation| CANVAS
+  A3 -->|"Decryption & Attestation"| CANVAS
 
-  A3 -->|Model Refinement (ONNX / Tensor Backends)| MLC
+  A3 -->|"Model Refinement - ONNX / Tensor Backends"| MLC
 
-  A3 -->|Federated Gradient Aggregation| FED
-
-
-
-  A1 -->|Local Fine-Tuning| COREML
-
-  A1 -->|Alternative Training Path| TFLITE
-
-  A1 -->|Alternative Training Path| PYTORCH
-
-  A1 -->|Optional Metal-Based Fine-Tuning| MLC
+  A3 -->|"Federated Gradient Aggregation"| FED
 
 
 
-  A2 -->|Analytical Visualization & Evaluation| COREML
+  A1 -->|"Local Fine-Tuning"| COREML
 
-  A4 -->|Inference Consumption| COREML
+  A1 -->|"Alternative Training Path"| TFLITE
 
-  A5 -->|Contextual Real-Time Adaptation| COREML
+  A1 -->|"Alternative Training Path"| PYTORCH
+
+  A1 -->|"Optional Metal-Based Fine-Tuning"| MLC
 
 
 
-  FED -->|Digitally Signed Model Deltas| CANVAS
+  A2 -->|"Analytical Visualization & Evaluation"| COREML
 
-  CANVAS -->|Authenticated Model Dissemination| CM
+  A4 -->|"Inference Consumption"| COREML
+
+  A5 -->|"Contextual Real-Time Adaptation"| COREML
+
+
+
+  FED -->|"Digitally Signed Model Deltas"| CANVAS
+
+  CANVAS -->|"Authenticated Model Dissemination"| CM
 
   CM --> A1
 
