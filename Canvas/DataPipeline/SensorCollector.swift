@@ -8,14 +8,14 @@
 import Foundation
 import CoreMotion
 import CoreLocation
-import Combine
+import Observation
 
 /// Collects sensor data from device sensors
-class SensorCollector: NSObject, ObservableObject {
+@Observable class SensorCollector: NSObject {
     static let shared = SensorCollector()
     
-    @Published var isCollecting: Bool = false
-    @Published var lastReading: SensorData?
+    var isCollecting: Bool = false
+    var lastReading: SensorData?
     
     private let motionManager = CMMotionManager()
     private let locationManager = CLLocationManager()
