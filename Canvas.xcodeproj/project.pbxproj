@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30271BB92EC8E90A00CD7DA5 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 30271BB82EC8E90A00CD7DA5 /* Crypto */; };
 		30C0C0D52EC515B500C18A3B /* WHITEPAPER.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */; };
 		30C1E93B2EC50F8500E87A73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E93A2EC50F8500E87A73 /* README.md */; };
 		30C1E93C2EC50F8500E87A73 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E9392EC50F8500E87A73 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30271BB62EC8E6AA00CD7DA5 /* Crypto */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Crypto; path = ../Crypto; sourceTree = SOURCE_ROOT; };
 		30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WHITEPAPER.md; sourceTree = "<group>"; };
 		30C1E8F52EC5013700E87A73 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C1E9392EC50F8500E87A73 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30271BB92EC8E90A00CD7DA5 /* Crypto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		30C1E8EC2EC5013700E87A73 = {
 			isa = PBXGroup;
 			children = (
+				30271BB62EC8E6AA00CD7DA5 /* Crypto */,
 				30C1E8F72EC5013700E87A73 /* Canvas */,
 				30C1E8F62EC5013700E87A73 /* Products */,
 				30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */,
@@ -77,6 +81,7 @@
 			);
 			name = Canvas;
 			packageProductDependencies = (
+				30271BB82EC8E90A00CD7DA5 /* Crypto */,
 			);
 			productName = Canvas;
 			productReference = 30C1E8F52EC5013700E87A73 /* Canvas.app */;
@@ -106,6 +111,9 @@
 			);
 			mainGroup = 30C1E8EC2EC5013700E87A73;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				30271BB72EC8E90A00CD7DA5 /* XCLocalSwiftPackageReference "../Crypto" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 30C1E8F62EC5013700E87A73 /* Products */;
 			projectDirPath = "";
@@ -351,6 +359,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		30271BB72EC8E90A00CD7DA5 /* XCLocalSwiftPackageReference "../Crypto" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Crypto;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30271BB82EC8E90A00CD7DA5 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Crypto;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30C1E8ED2EC5013700E87A73 /* Project object */;
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 import Observation
+import Crypto
 
 /// Manages storage and retrieval of sensor data with encryption
 @Observable
@@ -16,7 +17,7 @@ class DataStore {
     var dataCount: Int = 0
     var isCollecting: Bool = false
     
-    private let encryptionManager = EncryptionManager.shared
+    private let encryptionManager = CryptoManager.shared
     private let fileManager = FileManager.default
     
     private var documentsDirectory: URL {

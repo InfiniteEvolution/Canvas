@@ -8,6 +8,7 @@
 import Foundation
 import CoreML
 import Observation
+import Crypto
 
 /// Manages model lifecycle: storage, versioning, and retrieval
 @Observable
@@ -18,7 +19,7 @@ class ModelManager {
     var allModels: [ModelMetadata] = []
     
     private let fileManager = FileManager.default
-    private let encryptionManager = EncryptionManager.shared
+    private let encryptionManager = CryptoManager.shared
     
     private var documentsDirectory: URL {
         fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
