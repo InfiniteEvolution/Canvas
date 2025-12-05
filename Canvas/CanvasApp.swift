@@ -2,16 +2,19 @@
 //  CanvasApp.swift
 //  Canvas
 //
-//  Created by sijo on 12/11/25.
+//  Created by sijo using AI on 30/11/25.
 //
 
+import DataCollector
 import SwiftUI
 
 @main
 struct CanvasApp: App {
+    @State private var sensorCollector = SensorDataCollector()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VibeView(sensorCollector: sensorCollector)
         }
     }
 }
