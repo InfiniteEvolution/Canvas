@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>location</string>
+	</array>
+	<key>NSMotionUsageDescription</key>
+	<string>We use motion data to understand your activity level.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We use your location to correlate sensor data with your environment and to collect data in the background.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use your location to correlate sensor data with your environment.</string>
+</dict>
+</plist>

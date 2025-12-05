@@ -7,19 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3053C2B12EE36D2E00B68A03 /* DataCollector in Frameworks */ = {isa = PBXBuildFile; productRef = 3053C2B02EE36D2E00B68A03 /* DataCollector */; };
+		3053E0522EE2B29400085CDA /* Trainer in Frameworks */ = {isa = PBXBuildFile; productRef = 3053E0512EE2B29400085CDA /* Trainer */; };
+		30C0C0D52EC515B500C18A3B /* WHITEPAPER.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */; };
 		30C1E93B2EC50F8500E87A73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E93A2EC50F8500E87A73 /* README.md */; };
 		30C1E93C2EC50F8500E87A73 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30C1E9392EC50F8500E87A73 /* LICENSE */; };
+		30D8B6372EE36BA7009AFDFE /* DataCollector in Frameworks */ = {isa = PBXBuildFile; productRef = 30D8B6362EE36BA7009AFDFE /* DataCollector */; };
+		30ED8C062EE32C6B00C5F4AA /* DataCollector in Frameworks */ = {isa = PBXBuildFile; productRef = 30ED8C052EE32C6B00C5F4AA /* DataCollector */; };
+		30ED8C092EE32C7700C5F4AA /* Trainer in Frameworks */ = {isa = PBXBuildFile; productRef = 30ED8C082EE32C7700C5F4AA /* Trainer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WHITEPAPER.md; sourceTree = "<group>"; };
 		30C1E8F52EC5013700E87A73 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C1E9392EC50F8500E87A73 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		30C1E93A2EC50F8500E87A73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		306D655E2ECCB86C00A6FE96 /* Exceptions for "Canvas" folder in "Canvas" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 30C1E8F42EC5013700E87A73 /* Canvas */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		30C1E8F72EC5013700E87A73 /* Canvas */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				306D655E2ECCB86C00A6FE96 /* Exceptions for "Canvas" folder in "Canvas" target */,
+			);
 			path = Canvas;
 			sourceTree = "<group>";
 		};
@@ -30,6 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30ED8C092EE32C7700C5F4AA /* Trainer in Frameworks */,
+				30ED8C062EE32C6B00C5F4AA /* DataCollector in Frameworks */,
+				3053C2B12EE36D2E00B68A03 /* DataCollector in Frameworks */,
+				30D8B6372EE36BA7009AFDFE /* DataCollector in Frameworks */,
+				3053E0522EE2B29400085CDA /* Trainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +66,7 @@
 			children = (
 				30C1E8F72EC5013700E87A73 /* Canvas */,
 				30C1E8F62EC5013700E87A73 /* Products */,
+				30C0C0D42EC515B500C18A3B /* WHITEPAPER.md */,
 				30C1E9392EC50F8500E87A73 /* LICENSE */,
 				30C1E93A2EC50F8500E87A73 /* README.md */,
 			);
@@ -74,6 +100,11 @@
 			);
 			name = Canvas;
 			packageProductDependencies = (
+				3053E0512EE2B29400085CDA /* Trainer */,
+				30ED8C052EE32C6B00C5F4AA /* DataCollector */,
+				30ED8C082EE32C7700C5F4AA /* Trainer */,
+				30D8B6362EE36BA7009AFDFE /* DataCollector */,
+				3053C2B02EE36D2E00B68A03 /* DataCollector */,
 			);
 			productName = Canvas;
 			productReference = 30C1E8F52EC5013700E87A73 /* Canvas.app */;
@@ -103,6 +134,9 @@
 			);
 			mainGroup = 30C1E8EC2EC5013700E87A73;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3053C2AF2EE36D2E00B68A03 /* XCRemoteSwiftPackageReference "DataCollector" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 30C1E8F62EC5013700E87A73 /* Products */;
 			projectDirPath = "";
@@ -119,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C1E93B2EC50F8500E87A73 /* README.md in Resources */,
+				30C0C0D52EC515B500C18A3B /* WHITEPAPER.md in Resources */,
 				30C1E93C2EC50F8500E87A73 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,12 +226,16 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -249,11 +288,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 26.0;
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -265,29 +308,41 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53U7QQ5QQK;
+				DRIVERKIT_DEPLOYMENT_TARGET = 25.0;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Canvas needs location access to collect sensor data for on-device AI training. All data remains private and encrypted on your device.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Canvas needs location access to collect sensor data for on-device AI training. All data remains private and encrypted on your device.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "Canvas needs motion sensor access to collect accelerometer and gyroscope data for on-device AI training. All data remains private and encrypted on your device.";
+				INFOPLIST_FILE = Canvas/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSSensorKitPrivacyPolicyURL = "https://github.com/InfiniteEvolution/Canvas";
+				INFOPLIST_KEY_NSSensorKitUsageDescription = "We use your sensor data to understand your daily activities and device usage patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bee.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -299,29 +354,41 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53U7QQ5QQK;
+				DRIVERKIT_DEPLOYMENT_TARGET = 25.0;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Canvas needs location access to collect sensor data for on-device AI training. All data remains private and encrypted on your device.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Canvas needs location access to collect sensor data for on-device AI training. All data remains private and encrypted on your device.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "Canvas needs motion sensor access to collect accelerometer and gyroscope data for on-device AI training. All data remains private and encrypted on your device.";
+				INFOPLIST_FILE = Canvas/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSSensorKitPrivacyPolicyURL = "https://github.com/InfiniteEvolution/Canvas";
+				INFOPLIST_KEY_NSSensorKitUsageDescription = "We use your sensor data to understand your daily activities and device usage patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bee.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -347,6 +414,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3053C2AF2EE36D2E00B68A03 /* XCRemoteSwiftPackageReference "DataCollector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InfiniteEvolution/DataCollector";
+			requirement = {
+				branch = M0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3053C2B02EE36D2E00B68A03 /* DataCollector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3053C2AF2EE36D2E00B68A03 /* XCRemoteSwiftPackageReference "DataCollector" */;
+			productName = DataCollector;
+		};
+		3053E0512EE2B29400085CDA /* Trainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Trainer;
+		};
+		30D8B6362EE36BA7009AFDFE /* DataCollector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataCollector;
+		};
+		30ED8C052EE32C6B00C5F4AA /* DataCollector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataCollector;
+		};
+		30ED8C082EE32C7700C5F4AA /* Trainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Trainer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30C1E8ED2EC5013700E87A73 /* Project object */;
 }
