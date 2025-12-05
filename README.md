@@ -44,8 +44,8 @@ Three steps to unlock your Vibe.
 
 1.  **Clone the Source**
     ```bash
-    git clone https://github.com/your-repo/Vibe.git
-    cd Vibe
+    git clone https://github.com/InfiniteEvolution/Canvas.git
+    cd Canvas
     ```
 
 2.  **Ignite the Engine**
