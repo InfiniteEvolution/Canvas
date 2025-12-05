@@ -89,10 +89,10 @@ This is just the cover. To understand the physics, philosophy, and engineering r
 | Package | Role |
 | :--- | :--- |
 | **Canvas** *(You Are Here)* | The App |
-| [**DataCollector**](../DataCollector/README.md) | The Senses |
-| [**Trainer**](../Trainer/README.md) | The Brain |
-| [**Store**](../Store/README.md) | The Memory |
-| [**Logger**](../Logger/README.md) | The Console |
+| [**DataCollector**](https://github.com/InfiniteEvolution/DataCollector) | The Senses |
+| [**Trainer**](https://github.com/InfiniteEvolution/Trainer) | The Brain |
+| [**Store**](https://github.com/InfiniteEvolution/Store) | The Memory |
+| [**Logger**](https://github.com/InfiniteEvolution/Logger) | The Console |
 
 ---
 *Built with logic, love, and strict types.*
